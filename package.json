@@ -1,6 +1,6 @@
 {
   "name": "window-async-local-storage",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Async localStorage for browser",
   "main": "dist/src/index.js",
   "scripts": {

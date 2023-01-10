@@ -6,6 +6,8 @@
 
 Async localStorage for browser that provides the same interface as window.localStorage.
 
+[Showcasing](https://yinyanfr.github.io/window-async-local-storage/)
+
 ## :star2: Features
 
 - fully compatible with window.localStorage
