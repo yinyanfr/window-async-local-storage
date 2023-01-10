@@ -4,18 +4,34 @@
 ![license](https://img.shields.io/npm/l/window-async-local-storage.svg)
 ![size](https://img.shields.io/github/repo-size/yinyanfr/window-async-local-storage)
 
-Async localStorage for browser that provides the same interface as window.localStorage
+Async localStorage for browser that provides the same interface as window.localStorage.
 
-## Quick Start
+## :star2: Features
+
+- fully compatible with window.localStorage
+- 0 dependency
+
+## :green_book: Quick Start
 
 ```js
-import localStorage from "window-async-local-storage";
+import asyncLocalStorage from "window-async-local-storage";
+// import { getItem, setItem, removeItem, clear } from "window-async-local-storage";
 
-await localStorage.getItem("my-item");
+await asyncLocalStorage.getItem("my-item");
 
-await localStorage.setItem("my-item", 12345);
+await asyncLocalStorage.setItem("my-item", 12345);
 
-await localStorage.removeItem("my-item");
+await asyncLocalStorage.removeItem("my-item");
 
-await localStorage.clear();
+await asyncLocalStorage.clear();
+```
+
+Can be used with `window.localStorage` at the same time:
+
+```js
+import { getItem } from "window-async-local-storage;
+
+localStorage.setItem("my-item", "12345");
+
+await getItem("my-item"); // 12345
 ```
