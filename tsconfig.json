@@ -47,7 +47,7 @@
     "jest",
     "assets",
     "data",
-    "examples",
+    "docs",
     "tests"
   ],
   "ts-node": {

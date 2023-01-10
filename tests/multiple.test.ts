@@ -2,6 +2,7 @@ import seeds from "./MOCK_DATA.json";
 import { getItem, setItem, removeItem } from "../src";
 
 beforeAll(async () => {
+  localStorage.clear();
   const setters = seeds.map((e) => {
     setItem(e.id, e.url);
   });
