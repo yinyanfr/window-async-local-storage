@@ -9,8 +9,7 @@ export function getItem(key: string): Promise<string | null> {
 export function setItem(key: string, value: string): Promise<void> {
   return new Promise((resolve) => {
     setTimeout(() => {
-      localStorage.setItem(key, value);
-      resolve();
+      resolve(localStorage.setItem(key, value));
     }, 0);
   });
 }
@@ -18,8 +17,7 @@ export function setItem(key: string, value: string): Promise<void> {
 export function removeItem(key: string): Promise<void> {
   return new Promise((resolve) => {
     setTimeout(() => {
-      localStorage.removeItem(key);
-      resolve();
+      resolve(localStorage.removeItem(key));
     }, 0);
   });
 }
@@ -27,8 +25,7 @@ export function removeItem(key: string): Promise<void> {
 export function clear(): Promise<void> {
   return new Promise((resolve) => {
     setTimeout(() => {
-      localStorage.clear();
-      resolve();
+      resolve(localStorage.clear());
     }, 0);
   });
 }
