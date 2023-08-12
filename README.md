@@ -10,23 +10,29 @@ Async localStorage for browser that provides the same interface as window.localS
 
 ## :star2: Features
 
-- fully compatible with window.localStorage
+- Fully compatible with window.localStorage
 - 0 dependency
+- Supports all API of [AsyncStorage](https://react-native-async-storage.github.io/async-storage/docs/api)
+- Can use IndexedDB as backend (Work in Progress)
 
 ## :green_book: Quick Start
 
 ```js
-import asyncLocalStorage from "window-async-local-storage";
+import AsyncLocalStorage from 'window-async-local-storage';
 // import { getItem, setItem, removeItem, clear } from "window-async-local-storage";
 
-await asyncLocalStorage.getItem("my-item");
+await asyncLocalStorage.getItem('my-item');
 
-await asyncLocalStorage.setItem("my-item", 12345);
+await asyncLocalStorage.setItem('my-item', 12345);
 
-await asyncLocalStorage.removeItem("my-item");
+await asyncLocalStorage.removeItem('my-item');
 
 await asyncLocalStorage.clear();
 ```
+
+For more API please refer to [AsyncStorage](https://react-native-async-storage.github.io/async-storage/docs/api).
+
+Please note that callbacks are not implemented as it is marked as legacy for AsyncStorage as well.
 
 Can be used with `window.localStorage` at the same time:
 
